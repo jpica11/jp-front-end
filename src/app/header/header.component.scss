@@ -1,0 +1,37 @@
+.header {
+  background: rgb(15,100,1, 0.8);
+  position: fixed;
+  width: 100%;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 2;
+}
+
+.header-nav {
+  list-style-type: none;
+  display: flex;
+
+  li {
+    margin-left: 1%;
+    margin-right: 1%;
+    text-align: center;
+    text-decoration: none;
+
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+  }
+}
+
+.header-logo {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  font-family: sofia, serif;
+  margin-left: auto;
+}
