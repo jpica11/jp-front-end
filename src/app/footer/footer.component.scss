@@ -1,10 +1,10 @@
 @import '../../styles/colors.scss';
 
 .footer {
-  background: rgb($jp-green, 0.8);
+  background: rgb($jp-blue, 0.8);
   position: relative;
   width: 100%;
-  color: white;
+  color: $jp-white;
   font-family: sans-serif;
   text-align: center;
   text-transform: uppercase;

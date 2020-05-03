@@ -1,7 +1,9 @@
+@import '../../styles/colors.scss';
+
 .header {
-  background: rgb(15,100,1, 0.8);
+  background: rgb($jp-blue, 0.8);
   position: fixed;
-  width: 100%;
+  width: 100vw;
   color: white;
   font-family: sans-serif;
   text-align: center;
@@ -10,6 +12,7 @@
   align-items: center;
   justify-content: flex-start;
   z-index: 2;
+  font-size: 1vw;
 }
 
 .header-nav {
@@ -21,7 +24,6 @@
     margin-right: 1%;
     text-align: center;
     text-decoration: none;
-
     a {
       color: inherit;
       text-decoration: inherit;
@@ -30,8 +32,15 @@
 }
 
 .header-logo {
-  opacity: 1;
-  filter: alpha(opacity=100);
   font-family: sofia, serif;
   margin-left: auto;
+}
+
+@media (max-width: 760px) {
+  .header-nav {
+
+  }
+  .header-logo {
+    
+  }
 }
