@@ -1,17 +1,15 @@
 <hr class="page-break" />
 
-<div class="skills">
+<div id="skills" class="skills">
   <h1 class="skills-title">Skills</h1>
   <div class="skills-container">
     <div *ngFor="let skill of SKILLS" class="skill-container">
-      <span class="skill-name">{{ skill.skillTitle }}</span>
+      <span class="skill-title">{{ skill.skillTitle }}</span>
       <span class="skill-icon">{{ "{" }}</span>
       <ul class="skill-text">
-        <li>Tech 1</li>
-        <li>Tech 2</li>
-        <li>Tech 3</li>
-        <li>Tech 4</li>
-        <li>Tech 5</li>
+        <li *ngFor="let tech of skill.technology">
+          {{tech}}
+        </li>
       </ul>
     </div>
   </div>
