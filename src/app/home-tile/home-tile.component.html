@@ -1,0 +1,9 @@
+<div class="home">
+  <div class="home-tiles-container">
+    <div *ngFor="let tile of TILES" class="home-tile">
+      <img class="home-tile-background" src="{{tile.iconPath}}" />
+      <span class="tile-name">{{ tile.skillTitle }}</span>
+      <div class="skill-overlay">{{ tile.skillText }}</div>
+    </div>
+  </div>
+</div>

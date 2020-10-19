@@ -1,5 +1,7 @@
+@import '../../styles/colors.scss';
+
 .about-overlay {
-  background: rgb(118, 82, 139, 0.8);
+  background: rgb($jp-green, 0.8);
   position: absolute;
   border-radius: 5%;
   top: 35%;
@@ -11,7 +13,7 @@
 
 .about-text {
   font-size: 24px;
-  color: #FFFFFF;
+  color: $jp-white;
   font-family: serif;
   vertical-align: middle;
   padding-left: 1%;

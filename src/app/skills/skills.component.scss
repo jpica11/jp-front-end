@@ -1,0 +1,75 @@
+@import '../../styles/colors.scss';
+
+.page-break {
+  width: 90vw;
+}
+
+.skills {
+  color: $jp-white;
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.skills-title {
+  margin-top: 0;
+  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  
+  justify-content: space-around;
+  min-height: 75vh;
+}
+
+.skill-container {
+  background-color: rgb($jp-orange, .8);
+  border: 1px solid black;
+  width: 30%;
+  max-height: 30vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-title {
+  font-weight: bold;
+  text-align: center;
+  font-size: 24px;
+  padding-left: 5%;
+  width: 30%;
+}
+
+.skill-icon {
+  min-width: 20%;
+  font-size: 8vw;
+  text-align: center;
+}
+
+.skill-text {
+  min-width: 20%;
+}
+
+.skill-overlay {
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  font-size: 24px;
+  text-align: center;
+}
+
+.skill-container:hover .skill-overlay {
+  visibility: visible;
+  background: $jp-dark-gray;
+  color: $jp-white;
+}
